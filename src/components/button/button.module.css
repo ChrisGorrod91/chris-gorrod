@@ -1,0 +1,32 @@
+.button {
+	background: var(--foreground);
+	color: var(--background);
+	border: none;
+	padding: 2rem 2.4rem;
+	font-size: 1.6rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+	font-weight: 600;
+
+	&:hover {
+		background: var(--foreground-hover);
+	}
+
+	&:active {
+		scale: 0.97;
+	}
+}
+
+.button--secondary {
+	background: transparent;
+	color: var(--foreground);
+	border: 2px solid var(--foreground);
+	padding: 1.6rem 2.0rem;
+
+	&:hover {
+		background: var(--foreground);
+		color: var(--background);
+	}
+}
