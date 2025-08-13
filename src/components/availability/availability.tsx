@@ -1,10 +1,18 @@
 import Button from "../button/button";
 
-export default function Availability() {
+interface AvailabilityProps {
+    heading?: string;
+    text?: string;
+}
+
+export default function Availability({
+    heading = "Current availability",
+    text = "Available for contract or freelance projects"
+}: AvailabilityProps) {
     return (
         <section>
-            <h2 className="above-heading">Current availability</h2>
-            <p>Available for contract or freelance projects</p>
+            <h2 className="above-heading">{heading}</h2>
+            <p>{text}</p>
             <Button text="Get in touch"/>
         </section>
     );

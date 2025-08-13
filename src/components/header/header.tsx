@@ -1,5 +1,4 @@
 import style from "./header.module.css";
-import Button from "../button/button";
 import Availability from "../availability/availability";
 
 export default function Header() {
