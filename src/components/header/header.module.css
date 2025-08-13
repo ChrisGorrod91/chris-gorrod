@@ -1,0 +1,10 @@
+.headerWrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header {
+	margin-bottom: 8rem;
+}

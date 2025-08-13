@@ -15,9 +15,19 @@ p {
 
 .above-heading {
     font-family: "Grape Nuts", cursive;
-    font-size: 4.8rem /* 48px */;
+    font-size: 3.6rem /* 48px */;
     rotate: -4deg;
     position: absolute;
+    font-weight: 400;
+
+    + h1 {
+        padding-top: 3rem;
+    }
+
+    + p {
+        padding-top: 5rem;
+        font-size: 2rem /* 24px */;
+    }
 }
 
 .subheading {
@@ -25,6 +35,3 @@ p {
     font-size: 3rem /* 30px */;
 }
 
-.above-heading + h1 {
-    padding-top: 4rem;
-}
