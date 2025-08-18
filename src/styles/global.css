@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --background: #ffffff;
+    --foreground: #003E5F;
+    --foreground-hover: #00263B;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #003E5F;
+        --foreground: #ededed;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter', Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.6rem; /* 16px */
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
